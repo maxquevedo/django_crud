@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Eliminación de Usuario</h1>
+        <form method="post">
+            {% csrf_token %} 
+            ¿ Estás seguro que deseas borrar el Usuario ?
+            <br/><br/>
+            <input type="submit" value="Confirmar" />
+            <br/><br/>
+            <a href="{% url 'user_list' %}">Volver</a>
+        </form>
+    </body> 
+</html>

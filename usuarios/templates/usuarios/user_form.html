@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Crear Usuario</h1>
+       <form action="" name="Agregar_Usuario" method="POST">
+            {% csrf_token %}
+           <table>
+                <tr>
+                    <td>Nombre de usuario</td>
+                    <td><input name="username" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Correo</td>
+                    <td><input name="email" type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input name="name" type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td><input name="last_name" type="text"/></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Agregar</button></td>
+                    <td><button type="reset">Limpiar</button></td>
+                </tr>
+            </table>
+       </form>
+    </body> 
+    </html>
